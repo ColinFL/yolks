@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH debian:stable-slim
+FROM        --platform=linux/amd64 debian:stable-slim
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 ENV			TZ=Europe/Moscow

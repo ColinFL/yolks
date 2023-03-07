@@ -1,7 +1,7 @@
 # ----------------------------------
 # Environment: redis
 # ----------------------------------
-FROM    --platform=$TARGETOS/$TARGETARCH redis:6-bullseye
+FROM    --platform=linux/amd64 redis:6-bullseye
 ENV			TZ=Europe/Moscow
 
 LABEL   author="Michael Parker" maintainer="parker@pterodactyl.io"

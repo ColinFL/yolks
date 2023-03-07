@@ -1,7 +1,7 @@
 # ----------------------------------
 # Environment: debian
 # ----------------------------------
-FROM    --platform=$TARGETOS/$TARGETARCH node:16-bullseye
+FROM    --platform=linux/amd64 node:16-bullseye
 
 LABEL   author="goover" maintainer="info@goover.de"
 ENV			TZ=Europe/Moscow

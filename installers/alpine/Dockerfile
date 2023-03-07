@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
+FROM        --platform=linux/amd64 alpine:latest
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 ENV			TZ=Europe/Moscow

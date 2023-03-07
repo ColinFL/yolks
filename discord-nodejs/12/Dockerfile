@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:12-bullseye-slim
+FROM        --platform=linux/amd64 node:12-bullseye-slim
 
 LABEL       author="ColinFL" maintainer="service@discord-bot.net"
 ENV			TZ=Europe/Moscow

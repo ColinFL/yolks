@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=$TARGETOS/$TARGETARCH golang:1.17-alpine
+FROM        --platform=linux/amd64 golang:1.17-alpine
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 ENV			TZ=Europe/Moscow

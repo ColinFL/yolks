@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH python:3.8-slim
+FROM        --platform=linux/amd64 python:3.8-slim
 
 LABEL       author="ColinFL" maintainer="service@discord-bot.net"
 ENV			TZ=Europe/Moscow

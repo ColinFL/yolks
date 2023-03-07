@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:8u312-b07-jdk-focal
+FROM        --platform=linux/amd64 eclipse-temurin:8u312-b07-jdk-focal
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 ENV			TZ=Europe/Moscow

@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH erlang:23-alpine
+FROM        --platform=linux/amd64 erlang:23-alpine
 
 LABEL       author="Pascal Zarrad" maintainer="p.zarrad@outlook.de"
 ENV			TZ=Europe/Moscow

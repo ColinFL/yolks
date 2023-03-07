@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH debian:bullseye-slim
+FROM        --platform=linux/amd64 debian:bullseye-slim
 
 LABEL       author="QuintenQVD" maintainer="josdekurk@gmail.com"
 ENV			TZ=Europe/Moscow

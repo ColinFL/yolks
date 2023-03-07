@@ -1,4 +1,4 @@
-FROM  --platform=$TARGETOS/$TARGETARCH ubuntu:22.04
+FROM  --platform=linux/amd64 ubuntu:22.04
 
 LABEL author="Michael Parker" maintainer="parker@pterodactyl.io"
 ENV			TZ=Europe/Moscow

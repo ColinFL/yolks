@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH ghcr.io/parkervcp/yolks:debian
+FROM        --platform=linux/amd64 ghcr.io/parkervcp/yolks:debian
 
 LABEL       author="Torsten Widmann" maintainer="info@goover.de"
 ENV			TZ=Europe/Moscow

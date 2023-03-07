@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH ibm-semeru-runtimes:open-8-jdk
+FROM        --platform=linux/amd64 ibm-semeru-runtimes:open-8-jdk
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 ENV			TZ=Europe/Moscow

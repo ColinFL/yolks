@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH debian:stable-slim
+FROM        --platform=linux/amd64 debian:stable-slim
 
 LABEL       author="David Wolfe (Red-Thirten)" maintainer="rehlmgaming@gmail.com"
 ENV			TZ=Europe/Moscow

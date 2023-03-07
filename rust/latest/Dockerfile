@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH rust:slim
+FROM        --platform=linux/amd64 rust:slim
 
 LABEL       author="Ethan Coward" maintainer="ethan.coward@icloud.com"
 ENV			TZ=Europe/Moscow

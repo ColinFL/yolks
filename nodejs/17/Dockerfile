@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH node:17-bullseye-slim
+FROM        --platform=linux/amd64 node:17-bullseye-slim
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 ENV			TZ=Europe/Moscow
