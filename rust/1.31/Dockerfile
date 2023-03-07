@@ -1,6 +1,7 @@
 FROM        --platform=$TARGETOS/$TARGETARCH rust:1.31-slim
 
 LABEL       author="Ethan Coward" maintainer="ethan.coward@icloud.com"
+ENV			TZ=Europe/Moscow
 
 RUN         apt update \
                 && apt -y install git dnsutils curl iproute2 ffmpeg \

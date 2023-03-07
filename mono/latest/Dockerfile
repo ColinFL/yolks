@@ -1,6 +1,7 @@
 FROM        ghcr.io/parkervcp/yolks:debian
 
 LABEL       author="Torsten Widmann" maintainer="support@goover.de"
+ENV			TZ=Europe/Moscow
 
 RUN         apt update \
             && apt -y upgrade

@@ -1,6 +1,7 @@
 FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:11.0.13_8-jdk-focal
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+ENV			TZ=Europe/Moscow
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT

@@ -4,6 +4,7 @@
 FROM        --platform=$TARGETOS/$TARGETARCH mongo:6-focal
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+ENV			TZ=Europe/Moscow
 
 ENV         DEBIAN_FRONTEND noninteractive
 

@@ -1,6 +1,7 @@
 FROM        --platform=$BUILDPLATFORM debian:stable-slim
 
 LABEL       author="David Wolfe (Red-Thirten)" maintainer="rehlmgaming@gmail.com"
+ENV			TZ=Europe/Moscow
 
 LABEL       org.opencontainers.image.source="https://github.com/parkervcp/yolks"
 LABEL       org.opencontainers.image.licenses=MIT

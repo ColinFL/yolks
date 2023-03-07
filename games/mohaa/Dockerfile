@@ -1,6 +1,7 @@
 FROM        ghcr.io/parkervcp/yolks:debian
 
 LABEL       author="Manuel Dielacher" maintainer="th3dilli@gmx.at"
+ENV			TZ=Europe/Moscow
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT

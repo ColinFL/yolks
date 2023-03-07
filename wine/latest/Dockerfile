@@ -4,6 +4,7 @@
 FROM    ghcr.io/parkervcp/yolks:debian
 
 LABEL   author="Michael Parker" maintainer="parker@pterodactyl.io"
+ENV			TZ=Europe/Moscow
 
 ## install required packages
 RUN     dpkg --add-architecture i386 \

@@ -23,6 +23,7 @@
 FROM        --platform=$TARGETOS/$TARGETARCH debian:stable-slim
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
+ENV			TZ=Europe/Moscow
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT

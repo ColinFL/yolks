@@ -4,6 +4,7 @@
 FROM        debian:bullseye-slim
 
 LABEL       author="Torsten Widmann" maintainer="info@goover.de"
+ENV			TZ=Europe/Moscow
 
 ## install required packages
 RUN         dpkg --add-architecture i386

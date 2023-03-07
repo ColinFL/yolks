@@ -4,6 +4,7 @@
 FROM        --platform=$TARGETOS/$TARGETARCH mariadb:10.4
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+ENV			TZ=Europe/Moscow
 
 ENV         DEBIAN_FRONTEND noninteractive
 

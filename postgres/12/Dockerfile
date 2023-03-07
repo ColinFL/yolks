@@ -4,6 +4,7 @@
 FROM --platform=$TARGETOS/$TARGETARCH postgres:12-alpine
 
 LABEL author="Parker" maintainer="parker@pterodactyl.io"
+ENV			TZ=Europe/Moscow
 
 # UID 999 is the default pterodactyl user
 RUN adduser -D -h /home/container container

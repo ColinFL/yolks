@@ -1,6 +1,7 @@
 FROM        --platform=$TARGETOS/$TARGETARCH debian:bullseye-slim
 
 LABEL       author="QuintenQVD" maintainer="josdekurk@gmail.com"
+ENV			TZ=Europe/Moscow
 
 RUN         apt update \
             && apt -y upgrade

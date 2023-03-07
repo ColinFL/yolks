@@ -1,6 +1,7 @@
 FROM    --platform=$TARGETOS/$TARGETARCH debian:bullseye-slim
 
 LABEL   author="Torsten Widmann" maintainer="info@goover.de"
+ENV			TZ=Europe/Moscow
 
 ENV     DEBIAN_FRONTEND noninteractive
 

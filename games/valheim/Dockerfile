@@ -1,6 +1,7 @@
 FROM  --platform=$TARGETOS/$TARGETARCH ubuntu:22.04
 
 LABEL author="Daniel Barton" maintainer="danny6167@gmail.com"
+ENV			TZ=Europe/Moscow
 
 ENV   DEBIAN_FRONTEND noninteractive
 

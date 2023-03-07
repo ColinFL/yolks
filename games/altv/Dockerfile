@@ -4,6 +4,7 @@
 FROM    --platform=$TARGETOS/$TARGETARCH node:16-bullseye
 
 LABEL   author="goover" maintainer="info@goover.de"
+ENV			TZ=Europe/Moscow
 
 ENV     DEBIAN_FRONTEND noninteractive
 
