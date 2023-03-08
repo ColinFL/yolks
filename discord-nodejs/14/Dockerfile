@@ -9,7 +9,6 @@ RUN         apt update \
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN         npm install npm@latest -g
 RUN			npm install pm2 -g
 
 USER        container
