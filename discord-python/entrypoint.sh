@@ -12,8 +12,8 @@ python --version
 find -type f -exec sed -i -r "s/https:\\/\\/discord.com\\/api/https:\\/\\/proxy.discord-bot.net\\/api/g" {} \; 
 
 # Replace Startup Variables
-MODIFIED_STARTUP=$(echo -e $(echo -e ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g'))
-echo -e ":/home/container$ ${MODIFIED_STARTUP}"
+MODIFIED_STARTUP=$(echo -e ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
+echo ":/home/container$ ${MODIFIED_STARTUP}"
 
 # Run the Server
 eval ${MODIFIED_STARTUP}
