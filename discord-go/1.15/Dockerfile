@@ -34,6 +34,8 @@ RUN         apk add --update --no-cache ca-certificates tzdata \
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
+ENV 		GOPATH=/home/container/tmp/go
+ENV 		GOMODCACHE=/home/container/tmp/go/pkg
 
 COPY        ./../entrypoint.sh /entrypoint.sh
 CMD         [ "/bin/ash", "/entrypoint.sh" ]

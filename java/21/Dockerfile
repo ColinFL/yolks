@@ -20,22 +20,21 @@
 # SOFTWARE.
 #
 
-FROM        --platform=linux/amd64 golang:1.19-alpine
+FROM        --platform=linux/amd64 eclipse-temurin:21-jdk
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
-ENV			TZ=Europe/Moscow
 
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN         apk add --update --no-cache ca-certificates tzdata \
-				&& adduser -D -h /home/container container
-
+RUN 				apt-get update -y \
+						&& apt-get install -y lsof curl ca-certificates openssl git tar sqlite3 fontconfig libfreetype6 tzdata iproute2 libstdc++6 \
+						&& useradd -d /home/container -m container
+						
+ENV			TZ=Europe/Moscow
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
-ENV 		GOPATH=/home/container/tmp/go
-ENV 		GOMODCACHE=/home/container/tmp/go/pkg
 
 COPY        ./../entrypoint.sh /entrypoint.sh
-CMD         [ "/bin/ash", "/entrypoint.sh" ]
+CMD         [ "/bin/bash", "/entrypoint.sh" ]

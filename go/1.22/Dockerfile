@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 
-FROM        --platform=linux/amd64 golang:1.19-alpine
+FROM        --platform=linux/amd64 golang:1.22-alpine
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
 ENV			TZ=Europe/Moscow
@@ -34,8 +34,6 @@ RUN         apk add --update --no-cache ca-certificates tzdata \
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
-ENV 		GOPATH=/home/container/tmp/go
-ENV 		GOMODCACHE=/home/container/tmp/go/pkg
 
 COPY        ./../entrypoint.sh /entrypoint.sh
 CMD         [ "/bin/ash", "/entrypoint.sh" ]
