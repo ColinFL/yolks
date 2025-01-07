@@ -20,7 +20,7 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
     esac \
     && set -ex \
     # libatomic1 for arm
-    && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends \
+    && apt-get update && apt-get install -y procps ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && for key in \
       4ED778F539E3634C779C87C6D7062848A1AB005C \
@@ -57,7 +57,6 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
     && node --version \
     && npm --version
 
-RUN         npm install npm@latest -g
 RUN			npm install pm2 -g
 
 RUN         apt update \

@@ -4,7 +4,7 @@ LABEL       author="ColinFL" maintainer="service@discord-bot.net"
 ENV			TZ=Europe/Moscow
 
 RUN         apt update \
-            && apt -y install git gcc g++ ca-certificates dnsutils curl iproute2 ffmpeg procps tzdata software-properties-common locales locales-all wget cmake zlib1g-dev \
+            && apt -y install procps git gcc g++ ca-certificates dnsutils curl iproute2 ffmpeg procps tzdata software-properties-common locales locales-all wget cmake zlib1g-dev \
             && useradd -m -d /home/container container
 
 RUN locale-gen en_US.UTF-8

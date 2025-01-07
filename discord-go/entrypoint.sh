@@ -38,7 +38,7 @@ printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0mgo version\n"
 go version
 
 # Replace discord to proxy
-find -type f -exec sed -i -r "s/https:\\/\\/discord.com\\/api/https:\\/\\/proxy.discord-bot.net\\/api/g" {} \;
+find -type f -print0 | xargs -0 sed -i -r "s/https:\\/\\/discord.com\\/api/https:\\/\\/proxy.discord-bot.net\\/api/g"
 
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
 # variable format of "${VARIABLE}" before evaluating the string and automatically

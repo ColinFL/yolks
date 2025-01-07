@@ -9,7 +9,7 @@ export INTERNAL_IP
 python --version
 
 # Replace discord to proxy
-find -type f -exec sed -i -r "s/https:\\/\\/discord.com\\/api/https:\\/\\/proxy.discord-bot.net\\/api/g" {} \; 
+find -type f -print0 | xargs -0 sed -i -r "s/https:\\/\\/discord.com\\/api/https:\\/\\/proxy.discord-bot.net\\/api/g"
 
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo -e ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
